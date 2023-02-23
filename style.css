@@ -170,6 +170,24 @@ body {
     
 }
 
+.home .sobre {
+    margin: 10px auto 25px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.home .txt2 {
+    margin: 20px;
+    text-align: justify;
+    
+}
+
+.home .contato {
+    margin: 10px auto 25px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
 .imagem {
     display: flex;
     gap: 30px;
