@@ -26,7 +26,7 @@ body {
     gap: 20px;
 }
 
-.page img {
+.me {
     border-radius: 100%;
     width: 250px;
 }
@@ -154,9 +154,7 @@ body {
     margin-bottom: 40px;
 }
 
-.home img {
-    width: auto;
-}
+
 
 .home .bv {
     margin: 10px auto 25px;
@@ -210,4 +208,16 @@ body {
     gap: 30px;
     justify-content: center;
     margin-top: 50px;
+}
+
+.cubo, .form, .art, .svt {
+    height: 100px;
+    width: 150px;
+}
+
+.imagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
