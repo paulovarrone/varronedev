@@ -154,47 +154,14 @@ body {
     margin-bottom: 40px;
 }
 
-
-
-.home .bv {
+.bv, .sobre, .contato, .projetos {
     margin: 10px auto 25px;
     font-weight: 700;
     font-size: 20px;
 }
-.home .txt1 {
+.txt1, .txt2, .txt3 {
     margin: 20px;
     text-align: justify;
-    
-    
-}
-
-.home .sobre {
-    margin: 10px auto 25px;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.home .txt2 {
-    margin: 20px;
-    text-align: justify;
-    
-}
-
-.home .contato {
-    margin: 10px auto 25px;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.home .txt3 {
-    margin: 20px;
-    text-align: justify;
-}
-
-.home .projetos {
-    margin: 10px auto 25px;
-    font-weight: 700;
-    font-size: 20px;
 }
 
 .imagem {
