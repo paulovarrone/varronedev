@@ -89,6 +89,9 @@
     </div>
 
     <script>
+
+        // PARA ANIMAR O MENU NAVIGATION
+
         const list = document.querySelectorAll('.list');
         function activeLink(){
             list.forEach((item) => 
@@ -98,7 +101,7 @@
         list.forEach((item) => 
         item.addEventListener('click', activeLink));
 
-        <!-- PARA TIRAR O TEXTO DO MEIO-->
+        // PARA REMOVER O TEXTO AO CLICAR NOS BOTOES 
 
         const textos = document.querySelectorAll('div[id^="div-"]');
         const botoes = document.querySelectorAll('a[id^="a-"]');
