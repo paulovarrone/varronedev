@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <img src="https://avatars.githubusercontent.com/u/100317569?v=4" alt="Imagem Paulo">
+    <div class="navigation">
+        
+        <ul>
+            <li class="list active">
+                <a id="a-1" href="#">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a id="a-2" href="#">
+                    <span class="icon">
+                        <ion-icon name="document-attach-outline"></ion-icon>
+                    </span>
+                    <span class="text">Sobre</span>
+                </a>
+            </li>
+            <li class="list">
+                <a id="a-3" href="#">
+                    <span class="icon">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </span>
+                    <span class="text">Contato</span>
+                </a>
+            </li>
+            <li class="list">
+                <a id="a-4" href="#">
+                    <span class="icon">
+                        <ion-icon name="briefcase-outline"></ion-icon>
+                    </span>
+                    <span class="text">Projects</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+    
+    <div class="home">
+        <div id="div-1">
+
+                <p class="bv">
+                    Bem-vindo ao meu Portfólio
+                </p>
+
+                <div class="imagem">
+                    <a href="https://github.com/paulovarrone" target="_blank"><img src="./imgs/github (1).png" alt="Imagem GitHub"></a>
+
+                    <a href="https://www.linkedin.com/in/paulovarrone/" target="_blank"><img src="./imgs/linkedin.png" alt="Imagem Linkedin"></a>
+
+                </div>
+
+                <p class="txt1">
+                    • Me chamo Paulo, sou estudante de sistemas de informação. Tenho conhecimentos em HTML, CSS e JavaScript, animado para continuar a aprimorar minhas habilidades nessas linguagens, criando soluções modernas e intuitivas para a web. Estudando a fundo cada uma delas. Progredindo em meu aprendizado, pretendo me aprofundar em frameworks populares. Aberto a aprender novas tecnologias e tendências do mercado para aprimorar minhas habilidades.
+                </p>
+
+        </div>
+        
+       <div id="div-2">
+            EM DESENVOLVIMENTO 2
+       </div>
+        
+       <div id="div-3">
+             EM DESENVOLVIMENTO 3
+       </div>
+
+       <div id="div-4">
+             EM DESENVOLVIMENTO 4
+       </div>
+
+    </div>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) => 
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) => 
+        item.addEventListener('click', activeLink));
+
+        <!-- PARA TIRAR O TEXTO DO MEIO-->
+
+        const textos = document.querySelectorAll('div[id^="div-"]');
+        const botoes = document.querySelectorAll('a[id^="a-"]');
+
+        botoes.forEach((botao, index) => {
+        botao.addEventListener('click', () => {
+            textos.forEach((texto, textoIndex) => {
+            if (textoIndex === index) {
+                texto.style.display = '';
+            } else {
+                texto.style.display = 'none';
+            }
+            });
+        });
+        });
+
+        
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
