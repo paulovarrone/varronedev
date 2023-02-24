@@ -26,6 +26,18 @@ body {
     gap: 20px;
 }
 
+@media (min-width: 627px) {
+    .page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-top: 80px;
+        gap: 20px;
+    }
+}
+
+
 .me {
     border-radius: 100%;
     width: 250px;
@@ -146,6 +158,22 @@ body {
     transform: translateX(calc(70px * 3.12));
 }
 
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 627px) {
+    .top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
 .home {
     background: #fff;
     width: 340px;
@@ -155,14 +183,60 @@ body {
     margin-bottom: 40px;
 }
 
+@media (min-width: 627px) {
+    .home {
+        background: #fff;
+        width: 610px;
+        height: 400px;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+
 .bv, .sobre, .contato, .projetos {
     margin: 10px auto 25px;
     font-weight: 700;
     font-size: 20px;
 }
+
+@media (min-width: 600px) {
+    .bv, .sobre, .contato, .projetos {
+        margin: 10px auto 25px;
+        font-weight: 700;
+        font-size: 25px;
+    }
+}
+
 .txt1, .txt2, .txt3 {
     margin: 20px;
     text-align: justify;
+}
+
+.crr {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .txt2 {
+        margin: 20px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .crl {
+        display: none;
+    }
+
+    .crr {
+        display: block;
+    }
+
+
 }
 
 .imagem {
@@ -171,14 +245,14 @@ body {
     justify-content: center;
 }
 
-.wapp:hover, .link:hover, .git:hover  {
+.wapp:hover, .link:hover, .git:hover, .crr:hover  {
     transform: scale(1.25);
     
     transition-duration: 700ms;
     
 }
 
-.cubo:hover, .form:hover, .art:hover, .svt:hover {
+.cubo:hover, .form:hover, .art:hover, .svt:hover, .meni:hover, .formpc:hover  {
     transform: scale(1.20);
     
     transition-duration: 700ms;
@@ -191,14 +265,55 @@ body {
     margin-top: 50px;
 }
 
+.formpc {
+    display: none;
+}
+
+.meni {
+    display: none;
+}
+
 .cubo, .form, .art, .svt {
     height: 100px;
     width: 150px;
 }
+
+@media (min-width: 600px) {
+    .cubo, .form, .art, .svt {
+        height: 130px;
+        width: 150px;
+    }
+}
+
+@media (min-width: 600px) {
+    .formpc {
+        height: 130px;
+        width: 150px;
+        display: block; 
+    }
+
+    .meni {
+        height: 130px;
+        width: 150px;
+        display: block; 
+    }
+}
+
 
 .imagens {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 11px;
+}
+
+@media (min-width: 600px) {
+    .imagens {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
