@@ -170,6 +170,19 @@ body {
     justify-content: center;
 }
 
+.wapp:hover, .link:hover, .git:hover  {
+    transform: scale(1.25);
+    
+    transition-duration: 700ms;
+    
+}
+
+.cubo:hover, .form:hover, .art:hover, .svt:hover {
+    transform: scale(1.20);
+    
+    transition-duration: 700ms;
+}
+
 .imagem2 {
     display: flex;
     gap: 30px;
