@@ -88,10 +88,11 @@ body {
 .navigation ul li a .text {
     position: absolute;
     color: var(--clr);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 15px;
     letter-spacing: 0.05em;
     opacity: 0;
+
 }
 
 .navigation ul li.active a .text {
