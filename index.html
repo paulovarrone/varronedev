@@ -18,6 +18,21 @@
 <body>
     <div class="page">
        
+        <div class="header">
+               
+            <div id="band">
+                <a id="flag-br" href="#" >
+                    <img src="./imgs/brasilia.png" alt="Imagem Brasil">
+                </a>
+                       
+                <a id="flag-uk" href="#" >
+                    <img src="./imgs/united-kingdom.png" alt="Imagem Inglaterra">
+                </a>
+            
+            </div>
+            
+        </div>
+
        <div class="top">
         <img class="me" src="https://avatars.githubusercontent.com/u/100317569?v=4" alt="Imagem Paulo">
 
@@ -37,7 +52,7 @@
                         <span class="icon">
                             <ion-icon name="document-attach-outline"></ion-icon>
                         </span>
-                        <span class="text">Sobre</span>
+                        <span class="text">About</span>
                     </a>
                 </li>
                 <li class="list">
@@ -45,7 +60,7 @@
                         <span class="icon">
                             <ion-icon name="chatbubbles-outline"></ion-icon>
                         </span>
-                        <span class="text">Contato</span>
+                        <span class="text">Contatc</span>
                     </a>
                 </li>
                 <li class="list">
@@ -65,7 +80,7 @@
         <div class="home">
             <div id="div-1">
 
-                    <p class="bv">
+                    <p class="h1">
                         Bem-vindo 
                     </p>
 
@@ -79,24 +94,27 @@
                     <p class="txt1">
                         • Me chamo Paulo, sou estudante de sistemas de informação. Tenho conhecimentos em HTML, CSS e JavaScript, animado para continuar a aprimorar minhas habilidades nessas linguagens, criando soluções modernas e intuitivas para a web. Estudando a fundo cada uma delas. Progredindo em meu aprendizado, pretendo me aprofundar em frameworks populares. Aberto a aprender novas tecnologias e tendências do mercado para aprimorar minhas habilidades.
                     </p>
-
+      
             </div>
             
         <div id="div-2" style="display: none;">
-                <p class="sobre">
+                <p class="h2">
                     Sobre mim
                 </p>
 
                 <p class="txt2">
-                    • Paulo é um estudante de Sistemas de Informação que está sempre buscando aprimorar seus conhecimentos na área de tecnologia. Com fluência em inglês, italiano e português, sua determinação e persistência, Paulo está se preparando para se tornar um desenvolvedor web talentoso e inovador, capaz de criar soluções criativas e eficientes para as demandas do mercado de tecnologia. Sua paixão pela tecnologia, combinada com sua fluência em múltiplas línguas, faz de Paulo um indivíduo versátil e promissor na área de tecnologia da informação. <a class="crl" href="./cv/Currículo Paulo R. Varrone.pdf" target="_blank">Currículo</a>
+                    • Paulo é um estudante de Sistemas de Informação que está sempre buscando aprimorar seus conhecimentos na área de tecnologia. Com fluência em inglês, italiano e português, sua determinação e persistência, Paulo está se preparando para se tornar um desenvolvedor web talentoso e inovador, capaz de criar soluções criativas e eficientes para as demandas do mercado de tecnologia. Sua paixão pela tecnologia, combinada com sua fluência em múltiplas línguas, faz de Paulo um indivíduo versátil e promissor na área de tecnologia da informação. 
 
-                    <a href="./cv/Currículo Paulo R. Varrone.pdf" target="_blank"><img class="crr" src="./imgs/curriculos.png" alt="Imagem Currículo"></a>
+                    <div class="cur">
+
+                        <a href="./cv/Currículo Paulo R. Varrone.pdf" target="_blank"><img class="crr" src="./imgs/curriculos.png" alt="Imagem Currículo"></a>
+                    </div>
 
                 </p>
         </div>
             
         <div id="div-3" style="display: none;">
-                <p class="contato">
+                <p class="h3">
                     Contato
                 </p>
 
@@ -116,7 +134,7 @@
         </div>
 
         <div id="div-4" style="display: none;">
-                <p class="projetos">
+                <p class="h4">
                 Principais Projetos
                 </p>
 
@@ -151,6 +169,69 @@
         }
         list.forEach((item) => 
         item.addEventListener('click', activeLink));
+
+        // MUDANÇA DE LINGUAGEM
+
+        const flagUK = document.getElementById("flag-uk");
+        const flagBR = document.getElementById("flag-br");
+        
+        const text1 = document.querySelector(".txt1");
+        const text2 = document.querySelector(".txt2");
+        const text3 = document.querySelector(".txt3");
+        
+        const h1 = document.querySelector(".h1"); 
+        const h2 = document.querySelector(".h2"); 
+        const h3 = document.querySelector(".h3"); 
+        const h4 = document.querySelector(".h4"); 
+
+        // Armazena os textos originais da página
+        const originalText1 = text1.textContent;
+        const originalText2 = text2.textContent;
+        const originalText3 = text3.textContent;
+       
+        const originalH1 = h1.textContent;
+        const originalH2 = h2.textContent;
+        const originalH3 = h3.textContent;
+        const originalH4 = h4.textContent;
+
+
+        // Adiciona um manipulador de eventos de clique para a bandeira do Reino Unido
+        flagUK.addEventListener("click", function() {
+            // Altera o texto para inglês
+            h1.textContent = "Welcome"
+
+            text1.textContent = "• My name is Paulo, and I am a student of Information Systems. I have knowledge in HTML, CSS, and JavaScript, and I am excited to continue improving my skills in these languages, creating modern and intuitive solutions for the web. I am studying each language in depth, and as I progress in my learning, I plan to delve deeper into popular frameworks. I am open to learning new technologies and market trends to enhance my skills.";
+
+            h2.textContent = "About me"
+
+            text2.textContent = "• Paulo is a student of Information Systems who is always seeking to improve his knowledge in the technology field. With fluency in English, Italian, and Portuguese, Paulo's determination and persistence are preparing him to become a talented and innovative web developer, capable of creating creative and efficient solutions for the demands of the technology market. His passion for technology, combined with his fluency in multiple languages, makes Paulo a versatile and promising individual in the field of information technology.";
+
+            h3.textContent = "Contact"
+
+            text3.textContent ="• Hello! If you would like to get in touch with me, I would be happy to chat with you. You can send me a message through WhatsApp or LinkedIn. Feel free to send me your questions, comments, or suggestions - I am always open to new ideas and suggestions. I look forward to hearing from you! ";
+            
+            h4.textContent = "My  projects"
+        });
+
+        // Adiciona um manipulador de eventos de clique para a bandeira do Brasil
+        flagBR.addEventListener("click", function() {
+            // Volta para o texto original em Português
+            text1.textContent = originalText1;
+            text2.textContent = originalText2;
+            text3.textContent = originalText3;
+            h1.textContent = originalH1; 
+            h2.textContent = originalH2; 
+            h3.textContent = originalH3; 
+            h4.textContent = originalH4; 
+
+        });
+
+
+// Adiciona um manipulador de eventos de clique para a bandeira do Brasil
+flagBR.addEventListener("click", function() {
+  // Volta ao texto original da página
+  text.textContent = originalText;
+});
 
         // PARA REMOVER O TEXTO AO CLICAR NOS BOTOES 
 
