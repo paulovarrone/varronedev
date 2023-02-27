@@ -74,16 +74,16 @@
 
  // TEXT CHANGE IN CENTER WHEN CLICK IN NAVIGATION MENU
 
- const textos = document.querySelectorAll('div[id^="div-"]');
- const botoes = document.querySelectorAll('a[id^="a-"]');
+ const texts = document.querySelectorAll('div[id^="div-"]');
+ const buttons = document.querySelectorAll('a[id^="a-"]');
 
- botoes.forEach((botao, index) => {
- botao.addEventListener('click', () => {
-     textos.forEach((texto, textoIndex) => {
-     if (textoIndex === index) {
-         texto.style.display = '';
+ buttons.forEach((button, index) => {
+ button.addEventListener('click', () => {
+     texts.forEach((text, textIndex) => {
+     if (textIndex === index) {
+         text.style.display = '';
      } else {
-         texto.style.display = 'none';
+         text.style.display = 'none';
      }
      });
  });
