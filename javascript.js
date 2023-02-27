@@ -54,7 +54,7 @@
 
  // EVENT MANIPULATOR WHEN BR FLAG IS CLICKED
  flagBR.addEventListener("click", function() {
-     // Volta para o texto original em Português
+     // BACK ORIGINAL TEXT TO DEFAULT (PT-BR)
      text1.textContent = originalText1;
      text2.textContent = originalText2;
      text3.textContent = originalText3;
