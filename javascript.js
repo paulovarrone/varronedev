@@ -66,12 +66,6 @@
  });
 
 
-  // EVENT MANIPULATOR WHEN BR FLAG IS CLICKED
- flagBR.addEventListener("click", function() {
- // BACK ORIGINAL TEXT TO DEFAULT (PT-BR)
- text.textContent = originalText;
- });
-
  // TEXT CHANGE IN CENTER WHEN CLICK IN NAVIGATION MENU
 
  const texts = document.querySelectorAll('div[id^="div-"]');
